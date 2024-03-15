@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Kotki</title>
+</head>
+<body>
+<form action="#" th:action="@{/cats}" method="post">
+<select th:field="${formData.catColor}">
+    <option th:value="black" th:text="Czarny"></option>
+    <option th:value="white" th:text="Biały"></option>
+    <option th:value="orange" th:text="Rudy"></option>
+</select>
+    <button type="submit">Click</button>
+</form>
+<img th:src="${formData.image}"></img>
+</body>
+</html>
